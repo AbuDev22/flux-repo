@@ -7,7 +7,7 @@ spec:
   releaseName: todo-api
   chart:
     spec:
-      chart: charts/todoapi-chart
+      chart: charts/todo-api
       sourceRef:
         kind: GitRepository
         name: todo-helm
