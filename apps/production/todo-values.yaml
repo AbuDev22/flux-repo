@@ -8,15 +8,12 @@ spec:
     spec:
       version: ">=2.0.0"
   values:
-    services:
-      namespace: prod
-    postgresql:
-      namespace: prod
+    api:
+      replicaCount: 3
     ingress:
       hosts:
         - host: todo.production
           paths:
             - path: /
-              pathType: ImplementationSpecific
 
               
