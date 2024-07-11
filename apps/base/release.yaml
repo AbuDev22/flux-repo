@@ -4,7 +4,7 @@ metadata:
   name: todo-release
   namespace: prod
 spec:
-  releaseName: todoapp
+  releaseName: todo-api
   chart:
     spec:
       chart: charts/todoapi-chart
