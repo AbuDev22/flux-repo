@@ -6,7 +6,6 @@ metadata:
 spec:
   selector:
     app: frontend
-spec:
   ports:
     - protocol: TCP
       port: 8000
