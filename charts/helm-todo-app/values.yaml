@@ -5,7 +5,7 @@ app:
 
 service:
   ports: 8000
-  namespace: todo-app-ns
+  namespace: prod
   type: ClusterIP
   name: todo-app-service
 
@@ -28,7 +28,7 @@ organization: teratek
 
 postgresql:
   name: postgres
-  namespace: todo-app-ns
+  namespace: prod
   commonName: postgres.devops.auroraverusschool.org
   secretName: postgres-tls-secret
   username: user
