@@ -5,6 +5,7 @@ api:
   replicaCount: 1
 service:
   namespace: prod
+  name: todo-service
 ingress:
   host: api.production
 
