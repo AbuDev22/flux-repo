@@ -5,6 +5,8 @@ api:
   replicaCount: 1
 service:
   namespace: prod
+ingress:
+  host: api.production
 
 db:
   image:
