@@ -5,7 +5,8 @@ metadata:
   name: {{ .values.service.name }}
 spec:
   selector:
-    app: {{ .Release.Name }}-api
+    app: {{ .values.service.name }}
+spec:
   ports:
     - protocol: TCP
       port: 8000
