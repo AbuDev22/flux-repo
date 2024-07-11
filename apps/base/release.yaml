@@ -16,4 +16,9 @@ spec:
   install:
     remediation:
       retries: 4
+  values:
+    services:
+      namespace: prod
+    postgresql:
+      namespace: prod
   
