@@ -11,7 +11,7 @@ db:
   image:
     repository: postgres
     tag: latest
-  replicaCount: 2
+  replicaCount: 1
   storage:
     size: 1Gi
 
