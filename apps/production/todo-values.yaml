@@ -3,17 +3,28 @@ kind: HelmRelease
 metadata:
   name: todo-release
   namespace: prod
+
 spec:
+  releaseName: todo-api
   chart:
     spec:
-      version: ">=2.0.0"
-  values:
-    api:
-      replicaCount: 3
-    ingress:
-      hosts:
-        - host: todo.production
-          paths:
-            - path: /
+      chart: charts/todo-api
+      sourceRef:
+        kind: GitRepository
+        name: todo-helm
+        namespace: prod
+  
+# spec:
+#   chart:
+#     spec:
+#       version: ">=2.0.0"
+#   values:
+#     api:
+#       replicaCount: 2
+#     ingress:
+#       hosts:
+#         - host: todo.production
+#           paths:
+#             - path: /
 
               
