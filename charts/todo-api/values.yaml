@@ -2,9 +2,8 @@ api:
   image:
     repository: abudev22/newtodo-api
     tag: latest
-  replicaCount: 2
-service:
-  namespace: prod
+  replicaCount: 3
+
 
 
 db:
