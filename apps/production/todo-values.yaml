@@ -18,9 +18,8 @@ spec:
     api:
       replicaCount: 2
     ingress:
-      hosts:
-        - host: todo.production
-          paths:
-            - path: /
+      host: production.api
+        
+          
 
               
