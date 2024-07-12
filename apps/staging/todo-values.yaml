@@ -7,10 +7,10 @@ spec:
   chart:
     spec:
       version: ">=2.0.0"
-  values:
-    ingress:
-      hosts:
-        - host: todo.staging
-          paths:
-            - path: /
-              pathType: ImplementationSpecific
+  # values:
+  #   ingress:
+  #     hosts:
+  #       - host: todo.staging
+  #         paths:
+  #           - path: /
+  #             pathType: ImplementationSpecific
