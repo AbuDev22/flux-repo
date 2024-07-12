@@ -13,18 +13,14 @@ spec:
         kind: GitRepository
         name: todo-helm
         namespace: prod
-  
-# spec:
-#   chart:
-#     spec:
-#       version: ">=2.0.0"
-#   values:
-#     api:
-#       replicaCount: 2
-#     ingress:
-#       hosts:
-#         - host: todo.production
-#           paths:
-#             - path: /
+
+  values:
+    api:
+      replicaCount: 2
+    ingress:
+      hosts:
+        - host: todo.production
+          paths:
+            - path: /
 
               
