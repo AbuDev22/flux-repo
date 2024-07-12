@@ -3,10 +3,17 @@ kind: HelmRelease
 metadata:
   name: todo-release
   namespace: staging
+
 spec:
+  releaseName: todo-api-stag
   chart:
     spec:
-      version: ">=2.0.0"
+      chart: charts/todo-api
+      sourceRef:
+        kind: GitRepository
+        name: todo-helm
+        namespace: staging
+  
   # values:
   #   ingress:
   #     hosts:
