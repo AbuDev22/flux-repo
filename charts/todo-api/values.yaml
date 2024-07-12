@@ -4,7 +4,8 @@ api:
     tag: latest
   replicaCount: 3
 
-
+ingress:
+  host: staging.api.com
 
 db:
   image:
