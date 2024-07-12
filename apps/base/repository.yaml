@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: todo-helm
-  namespace: prod
+  namespace: base
 spec:
   interval: 1m
   url: https://github.com/Abudev22/flux-repo
